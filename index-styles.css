@@ -140,16 +140,6 @@ body {
     transform: scale(1.0) translateX(0px);
     transition-duration: 0.5s;
 }
-.card p:hover {
-    transition-property: all;
-    transition-duration: 0.5s;
-}
-
-.card p:not(hover) {
-    transition-property: all;
-    transition-duration: 0.5s;
-
-}
 
 .card-noshadow {
     margin-bottom: 30px;
