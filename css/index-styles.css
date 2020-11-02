@@ -113,6 +113,35 @@ body {
     box-shadow: 0px 10px 40px grey;
     padding: 20px;
 }
+.card:hover {
+    transition-property: all;
+    background-color: blue;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(1.05);
+}
+.card:not(hover) {
+    transition-property: all;
+    background-color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(1.00);
+}
+.card p:hover {
+    color:violet;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.card p:not(hover) {
+    color:black;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
 .card-noshadow {
     margin-bottom: 30px;
     max-height: 375px;
@@ -253,6 +282,20 @@ body {
 .proc-href {
     color: black;
     text-decoration: none;
+    
+}
+.proc-href:hover {
+    color: violet;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    
+}
+
+.proc-href:not(hover) {
+    color: black;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    
 }
 
 .processor-page {
