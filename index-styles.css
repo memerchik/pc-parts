@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.none {
+    display:none !important;
+}
+
+.reklama {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgrey;
+    background-image: url("./../pic/head/head-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    color: red;
+    background-color: white;
+    border: solid 5px grey;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+.header-sub {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: orangered;
+}
+
+.header-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    align-content: center;
+
+}
+
+.menu {
+    width: 100%;
+    background-color: white;
+}
+
+
+.componentlist-header {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: black;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-ad {
+    margin-bottom: 30px;
+    max-height: 375px;
+    width: 1110px;
+    background-color: white;
+    box-shadow: 0px 10px 40px grey;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 30px;
+    max-height: 375px;
+    max-width: 540px;
+    background-color: white;
+    box-shadow: 0px 10px 40px grey;
+    padding: 20px;
+}
+.card:hover {
+    transition-property: all;
+    background-color: blue;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(1.05);
+}
+.card:not(hover) {
+    transition-property: all;
+    background-color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(1.00);
+}
+.card:hover .card-title{
+    color: violet;
+    transform: scale(1.3) translateX(60px);
+    transition-duration: 0.5s;
+}
+
+.card:not(hover) .card-title{
+    color: black;
+    transform: scale(1.0) translateX(0px);
+    transition-duration: 0.5s;
+}
+.card p:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.card p:not(hover) {
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.card-noshadow {
+    margin-bottom: 30px;
+    max-height: 375px;
+    max-width: 540px;
+    background-color: white;
+    padding: 20px;
+}
+.card:last-child, .card:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+
+.card-img {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: black;
+}
+.card p {
+    font-size: 16px;
+    line-height: 130%;
+    color: black;
+    margin: 0;
+}
+
+.contact {
+    width: 100%;
+    background-color:rgba(208, 255, 0, 0.61);
+    color:black;
+}
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    color: rgb(49, 49, 49);
+}
+.copy-column {
+    max-width: 350px;
+    flex-grow: 1;
+}
+.copy-name {
+    margin-top: 45px;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 28px;
+    color: rgb(29, 29, 29);
+}
+.copyright p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+
+.contact-icons p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.contact-icons-row {
+    display: flex;
+    align-items: center;
+
+}
+
+.iconn:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    
+}
+.iconn:not(hover) {
+    transform: scale(1.00);
+    transition-duration: 0.5s;
+}
+
+.contact-icons-row > * + *{
+    margin-left: 30px;
+    scale: 1.00;
+}
+.contact-button {
+    height: 50px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 44px;
+    text-transform: uppercase;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+
+}
+
+.contact-write p{
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(49, 49, 49);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.proc-header {
+    width: 100%;
+    height: 50vh;
+    background-color: darkgrey;
+    background-image: url("./../pic/processor/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.proc-href {
+    color: black;
+    text-decoration: none;
+    
+}
+.proc-href:hover {
+    color: violet;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    
+}
+
+.proc-href:not(hover) {
+    color: black;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    
+}
+
+.processor-page {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.index-href {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 40px;
+    top: 10%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 5px;
+    border: solid 5px black;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    align-content: left;
+}
+
+.videokarta-header {
+    width: 100%;
+    height: 50vh;
+    background-image: url("./../pic/videokarta/videokarta.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
